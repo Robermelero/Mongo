@@ -8,7 +8,7 @@ const User = new mongoose.Schema({
         validate: [
             function(password)
             {
-                console.log(password.lenght)
+                console.log(password.length)
                 return password.length > 9;
             },
             'El password deberia de ser mas largo'],
@@ -45,3 +45,4 @@ const User = new mongoose.Schema({
 module.exports = mongoose.model ( "User",User);
 // module.exports = mongoose.model ("Profile", Profile);
 // module.exports = mongoose.model ("Creedentials", Creedentials);
+
